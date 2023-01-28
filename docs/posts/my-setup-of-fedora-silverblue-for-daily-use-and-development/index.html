@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://pratik280.github.io/posts/my-setup-of-fedora-silverblue-for-daily-use-and-development/">
+    <meta name="generator" content="Astro v1.9.2">
+
+    <!-- General Meta Tags -->
+    <title>My Setup of Fedora Silverblue for daily use and development</title>
+    <meta name="title" content="My Setup of Fedora Silverblue for daily use and development">
+    <meta name="description" content="This is how I setup my Fedora Silverblue desktop for software development and general use.">
+    <meta name="author" content="Pratik Chandlekar">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="My Setup of Fedora Silverblue for daily use and development">
+    <meta property="og:description" content="This is how I setup my Fedora Silverblue desktop for software development and general use.">
+    <meta property="og:url" content="https://pratik280.github.io/posts/my-setup-of-fedora-silverblue-for-daily-use-and-development/">
+    <meta property="og:image" content="https://pratik280.github.io/My%20Setup%20of%20Fedora%20Silverblue%20for%20daily%20use%20and%20development.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pratik280.github.io/posts/my-setup-of-fedora-silverblue-for-daily-use-and-development/">
+    <meta property="twitter:title" content="My Setup of Fedora Silverblue for daily use and development">
+    <meta property="twitter:description" content="This is how I setup my Fedora Silverblue desktop for software development and general use.">
+    <meta property="twitter:image" content="https://pratik280.github.io/astropaper-og.jpg">
+
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    
+
+    <script src="/toggle-theme.js"></script>
+  <link rel="stylesheet" href="/assets/about.c4bef4f8.css" />
+<link rel="stylesheet" href="/assets/about.f6d63baa.css" />
+<link rel="stylesheet" href="/assets/_slug_.538f0b32.css" />
+<link rel="stylesheet" href="/assets/_slug_.83ee8644.css" />
+<link rel="stylesheet" href="/assets/_slug_.f293c206.css" />
+<link rel="stylesheet" href="/assets/_slug_.5d11818f.css" /><script type="module">const e=document.querySelector(".hamburger-menu"),n=document.querySelector("#menu-items")?.classList,t=document.querySelector(".icon-container")?.classList,o=document.querySelector("#first-line")?.classList,a=document.querySelector("#second-line ")?.classList,s=document.querySelector("#third-line")?.classList;e.addEventListener("click",function(r){e?.getAttribute("aria-expanded")==="false"?(e?.setAttribute("aria-expanded","true"),e?.setAttribute("aria-label","Close Menu"),n?.remove("display-none"),t?.remove("flex"),t?.add("relative"),o?.add("rotate-45","absolute","bottom-1/2"),s?.add("display-none"),a?.add("!w-full","-rotate-45","absolute","bottom-1/2")):(e?.setAttribute("aria-expanded","false"),e?.setAttribute("aria-label","Open Menu"),n?.add("display-none"),t?.add("flex"),t?.remove("relative"),o?.remove("rotate-45","absolute","bottom-1/2"),s?.remove("display-none"),a?.remove("!w-full","-rotate-45","absolute","bottom-1/2"))});
+</script></head>
+  <body>
+    <header class="astro-BL5QQJBH">
+  <a id="skip-to-content" href="#main-content" class="astro-BL5QQJBH">Skip to content</a>
+  <div class="nav-container astro-BL5QQJBH">
+    <div class="top-nav-wrap astro-BL5QQJBH">
+      <a href="/" class="logo astro-BL5QQJBH">
+        Pratik Chandlekar
+      </a>
+      <nav id="nav-menu" class="astro-BL5QQJBH">
+        <button class="hamburger-menu focus-outline astro-BL5QQJBH" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-items">
+          <div class="icon-container flex astro-BL5QQJBH">
+            <div id="first-line" class="astro-BL5QQJBH"></div>
+            <div id="second-line" class="astro-BL5QQJBH"></div>
+            <div id="third-line" class="astro-BL5QQJBH"></div>
+          </div>
+        </button>
+        <ul id="menu-items" class="display-none sm:flex astro-BL5QQJBH">
+          <li class="astro-BL5QQJBH">
+            <a href="/posts" class=" astro-BL5QQJBH">
+              Posts
+            </a>
+          </li>
+          <li class="astro-BL5QQJBH">
+            <a href="/tags" class=" astro-BL5QQJBH">
+              Tags
+            </a>
+          </li>
+          <li class="astro-BL5QQJBH">
+            <a href="/about" class=" astro-BL5QQJBH">
+              About
+            </a>
+          </li>
+          <li class="astro-BL5QQJBH">
+            <a type="button" href="/search" tabindex="0" class="group focus-outline p-3 sm:p-1  astro-BL5QQJBH astro-P4AZ2LLL" aria-label="search" title="Search">
+  <svg xmlns="http://www.w3.org/2000/svg" class="scale-125 sm:scale-100 astro-BL5QQJBH"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z" class="astro-BL5QQJBH"></path>
+              </svg>
+</a>
+
+
+          </li>
+          <li class="astro-BL5QQJBH">
+            <button id="theme-btn" class="focus-outline astro-BL5QQJBH" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="moon-svg" class="astro-BL5QQJBH">
+                    <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z" class="astro-BL5QQJBH"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" id="sun-svg" class="astro-BL5QQJBH">
+                    <path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z" class="astro-BL5QQJBH"></path>
+                  </svg>
+                </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="max-w-3xl mx-auto px-4">
+  <hr class="border-skin-line" aria-hidden="true">
+</div>
+</header>
+
+
+
+<div class="max-w-3xl mx-auto w-full px-2 flex justify-start astro-4Q7HFHDG">
+    <button class="mt-8 mb-2 hover:opacity-75 flex focus-outline astro-4Q7HFHDG" onclick="history.back()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="astro-4Q7HFHDG"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" class="astro-4Q7HFHDG"></path>
+      </svg><span class="astro-4Q7HFHDG">Go back</span>
+    </button>
+  </div><main id="main-content" class="astro-4Q7HFHDG">
+    <h1 class="post-title astro-4Q7HFHDG">My Setup of Fedora Silverblue for daily use and development</h1>
+    <div class="opacity-80 flex items-center space-x-2 my-2 astro-4Q7HFHDG"><svg xmlns="http://www.w3.org/2000/svg" class="scale-100 w-6 h-6 inline-block fill-skin-base" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg><span class="sr-only">Posted on:</span><span class="italic text-base">January 27, 2023<span aria-hidden="true"> | </span><span class="sr-only"> at </span>10:35 PM</span></div>
+    <article id="article" role="article" class="mx-auto max-w-3xl mt-8 prose astro-4Q7HFHDG">
+      <h2 id="table-of-contents">Table of contents</h2>
+<p></p><details><summary>Open Table of contents</summary><p></p>
+<ul>
+<li>
+<p><a href="#introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#what-is-fedora-silverblue">What is Fedora Silverblue</a></p>
+</li>
+<li>
+<p><a href="#installation-of-fedora-silverblue">Installation of Fedora Silverblue</a></p>
+</li>
+<li>
+<p><a href="#desktop-overview-and-workflow">Desktop Overview and workflow</a></p>
+</li>
+<li>
+<p><a href="#updates-and-rollbacks">Updates and Rollbacks</a></p>
+<ul>
+<li><a href="#setting-up-flathub">Setting up Flathub</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#development-setup">Development Setup</a></p>
+<ul>
+<li>
+<p><a href="#distrobox">Distrobox</a></p>
+</li>
+<li>
+<p><a href="#installing-nodejs">Installing Nodejs</a></p>
+</li>
+<li>
+<p><a href="#installing-openjdk">Installing OpenJDK</a></p>
+</li>
+<li>
+<p><a href="#installing-python3-pip">Installing python3-pip</a></p>
+</li>
+<li>
+<p><a href="#installing-text-editors--ides">Installing Text Editors / IDEs</a></p>
+<ul>
+<li><a href="#installing-vscode">Installing VSCode</a></li>
+<li><a href="#installing-neovim">Installing Neovim</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#podman-and-docker">Podman and Docker</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#bonus">Bonus</a></p>
+<ul>
+<li><a href="#setting-keyboard-shortcuts-to-directly-open-terminal-shell-inside-our-distrobox-container">Setting keyboard shortcuts to directly open terminal shell inside our distrobox container</a></li>
+<li><a href="#updating">Updating</a></li>
+<li><a href="#housekeeping">Housekeeping</a></li>
+<li><a href="#installing-some-additional-tools">Installing some additional tools</a></li>
+<li><a href="#some-useful-bash-alias">Some useful bash alias</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#conclusion">Conclusion</a></p>
+</li>
+</ul>
+<p></p></details><p></p>
+<h2 id="introduction">Introduction</h2>
+<p>We all like the freshness of a newly installed linux distribution but after using it for months, after installing various programs, software stacks, tools and changing configuration files linux distro feels so stale. This was the reason I was regularly (after 6-8 months) reinstalling linux disto on my machine to get the feel of brand new install. I have distro hopped several times in the past, used different desktop environments and tiling window managers but finally I landed on Fedora Silverblue and using it for past one year. The immutable nature of Fedora Silverblue keeps the root filesystem untouched resulting in unclutered host machine forever. In this article I will be sharing how I use Fedora Silerblue for basic daily use and for development activities using distrobox, nodejs, python and podman/docker. The inspiration for blog is <a href="https://youtu.be/PM5exNztbXE">this video</a> from <a href="https://www.youtube.com/@JorgeCastro">Jorge Castro</a>. After watching this video I understood the cloud native workflow of fedora silverblue.</p>
+<h2 id="what-is-fedora-silverblue">What is Fedora Silverblue</h2>
+<p>i
+According to <a href="https://docs.fedoraproject.org/en-US/fedora-silverblue/">Fedora Silverblue docs</a> “Fedora Silverblue is an immutable desktop operating system. It aims to be extremely stable and reliable. It also aims to be an excellent platform for developers and for those using container-focused workflows.”.
+The root filesystem is readonly and cannot be changed.
+Programs are not installed using the package manager like other linux distros.
+The programs are layered on top of base operating system using a tool called rpm-ostree.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">rpm-ostree install &#x3C;package_name></span></span></code></pre>
+<p>Installing packages using rpm-ostree will create a new deployment and the modified root will be available after the reboot.
+I will suggest only layering “system software” packages like text editor, shell etc. This <a href="https://www.reddit.com/r/Fedora/comments/eq3wo1/fedora_silverblue_users_what_packages_do_you/">reddit thread</a> will give you a brief idea of what packages do people usually layer on top of their base silverblue install.
+I do not recommended layering too many packages since we will be using</p>
+<ol>
+<li>Flatpak for installing most of the applications and</li>
+<li>Containerized linux distro (ubuntu) using distrobox for all our development needs.</li>
+</ol>
+<h2 id="installation-of-fedora-silverblue">Installation of Fedora Silverblue</h2>
+<p><em>Skip this part if you have already installed Fedora Silverblue.</em></p>
+<ul>
+<li>Grab the latest image of Fedora Silverblue from <a href="https://silverblue.fedoraproject.org/download">https://silverblue.fedoraproject.org/download</a>.</li>
+<li>You will need a empty usb stick and <a href="https://www.balena.io/etcher/">Balena Etcher</a> to flash the Fedora Silverblue iso image onto usb stick.</li>
+<li>The process is quite simple, just select the image and usb drive then click “Flash”.</li>
+<li>Reboot your system and click F8 and delete button then select Bootable usb Fedora Silverblue from the boot options screen.</li>
+<li>The installation is straight forward just select language, keyboard layout timezone and storage space on which you want to install Fedora Silverblue.</li>
+</ul>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/install1.JPG" alt="Select Language"></p>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/install2.JPG" alt="Select keyboard layout timezone and hard drive space"></p>
+<ul>
+<li>After completion of installation complete the user creation and enable third party repositories.</li>
+</ul>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/install3.JPG" alt="Enable third party repository">
+<img src="/assets/01-Fedora-Silverblue-Setup/install3.JPG" alt="Enable third party repository"></p>
+<h2 id="desktop-overview-and-workflow">Desktop Overview and workflow</h2>
+<p>Fedora Silverblue comes with latest Gnome Desktop and is identical to Fedora Workstation.
+How I use gnome desktop is one application per workspace and switch between workspaces using “super + 1/2/3/4”.
+Few changes I make to to gnome desktop that suits my workflow.</p>
+<ol>
+<li>
+<p>Switch to dark mode.</p>
+</li>
+<li>
+<p>Setting -> Multitasking -> Disable Hot Corners</p>
+<p>Also, In Workspaces section enable “Fixed number of workspaces” and I set Number of Workspaces to 5.</p>
+</li>
+<li>
+<p>Changing keyboard shortcuts for managing workspaces.</p>
+<p>Settings -> Keyboard -> View and Customize Shortcuts -> Navigation.</p>
+<p>I do the following changes suitable for my workflow.</p>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/gnome-2.JPG" alt="Keyboard shortcuts">
+<img src="/assets/01-Fedora-Silverblue-Setup/gnome-3.JPG" alt="Keyboard shortcuts"></p>
+</li>
+<li>
+<p>Settings -> Keyboard -> View and Customize Shortcuts -> Windows -> Close Window</p>
+<p>I use <em>Super + Q</em> to close window.</p>
+</li>
+</ol>
+<h2 id="updates-and-rollbacks">Updates and Rollbacks</h2>
+<p>First thing to do after installing new Linux disro is updating the system.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">rpm-ostree upgrade</span></span></code></pre>
+<p>Then restart the system.</p>
+<p>I use terminal for managing the software packages thats why I remove gnome-software and since I want to use firefox from flathub I will also delete the preinstalled firefox.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">rpm-ostree override remove firefox firefox-langpacks gnome-software gnome-software-rpm-ostree</span></span></code></pre>
+<p>Then restart the system.</p>
+<p>Now installing distrobox (We will work with distrobox later)</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">rpm-ostree install distrobox</span></span></code></pre>
+<p>Again restart the system for the one last time.</p>
+<p>Everytime after making changes in the system by using rpm-ostree a new deployment is created. This allows us to rollback temporarily to previous change directly from grub menu or rollback permanently using command.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">rpm-ostree rollback</span></span></code></pre>
+<p>You can see your deployments using command:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">rpm-ostree status</span></span></code></pre>
+<p>You can pin the deployment so that it will not be garbage collected.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo ostree pin admin &#x3C;index></span></span></code></pre>
+<p>Pinning current deployment</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo ostree pin admin 0</span></span></code></pre>
+<h3 id="setting-up-flathub">Setting up Flathub</h3>
+<p>Fedora Silverblue comes with flatpak preinstalled. It is a universal package manager on linux. <a href="https://flathub.org/home">Flathub</a> is like a app store with hundreds of apps which can be installed using flatpak command. First we need to add flathub remote repository using command:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo</span></span></code></pre>
+<p>Now we have access to hundreds of application. Lets install firefox using flatpak flathub.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">flatpak install flathub org.mozilla.firefox</span></span></code></pre>
+<p>Flatpaks I use are:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">flatpak install flathub com.brave.Browser com.discordapp.Discord \</span></span>
+<span class="line"><span style="color: #abb2bf">com.google.Chrome com.mattjakeman.ExtensionManager \</span></span>
+<span class="line"><span style="color: #abb2bf">com.spotify.Client io.mpv.Mpv org.filezillaproject.Filezilla \</span></span>
+<span class="line"><span style="color: #abb2bf">org.gnome.Boxes org.gnome.Cheese org.libreoffice.LibreOffice org.telegram.desktop</span></span></code></pre>
+<blockquote>
+<p>I recommend using <a href="https://flathub.org/apps/details/com.github.tchx84.Flatseal">flatseal</a>, using this app we can manage permissions of flatpak applications. Example giving permission to ~/Downloads directory to web browsers.</p>
+</blockquote>
+<h2 id="development-setup">Development Setup</h2>
+<h3 id="distrobox">Distrobox</h3>
+<p><a href="https://github.com/89luca89/distrobox">Distrobox</a> is tool that creates a container using podman or docker. We can run any linux distribution in terminal using distrobox container. We will be using ubuntu 22.04 for all our development need. We will install all the necessary tools, softwares and dependencies in distrobox container so that our host fedora silverblue remains clean. Here are the <a href="https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros">linux distros</a> which you can install as container distros. We have already installed distrobox in the beginning. Now lets create a distrobox container.</p>
+<p>Create a distrobox container (ubuntu 22.04):</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox create --image docker.io/library/ubuntu:22.04 --name ubuntu-22.04</span></span></code></pre>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/db-1.JPG" alt="Distrobox create"></p>
+<p>List distrobox containers:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox list</span></span></code></pre>
+<p>Enter the ubuntu distrobox:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox enter ubuntu-22.04</span></span></code></pre>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/db-2.JPG" alt="Distrobox enter"></p>
+<p>In the above image you can see the shell promt shows <em>ubuntu</em>. We are inside ubuntu distrobox container.</p>
+<p>Updating distrobox container (ubuntu-22.04):</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">sudo apt update &#x26;&#x26; sudo apt upgrade</span></span></code></pre>
+<p>Installing version control system <em>git</em> inside ubuntu:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">sudo apt install git</span></span></code></pre>
+<p>We will be setting some different keyboard shortcuts to open specific terminal shell directly from either our ubuntu-22.04 distrobox or host fedora silverblue in latter part of the blog.</p>
+<h3 id="installing-nodejs">Installing Nodejs</h3>
+<p>We will be installing <a href="https://github.com/nvm-sh/nvm">Node Version Manager</a>.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash</span></span></code></pre>
+<p>Reload bash:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">bash</span></span></code></pre>
+<p>Installing nodejs LTS:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">nvm install --lts</span></span></code></pre>
+<p>Confirm nodejs installation:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">node -v</span></span></code></pre>
+<h3 id="installing-openjdk">Installing OpenJDK</h3>
+<p>Installing Java OpenJDK 11:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo apt install openjdk-11-jdk</span></span></code></pre>
+<p>Confirm your installation using:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">java -version</span></span></code></pre>
+<h3 id="installing-python3-pip">Installing python3-pip</h3>
+<p>Installing python package manager pip:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo apt install python3-pip</span></span></code></pre>
+<h3 id="installing-text-editors--ides">Installing Text Editors / IDEs</h3>
+<p>We will be making a ~/bin directory inside home and we will add this directory path to $PATH so than the binaries inside directory are always availabe to execute.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">mkdir ~/bin</span></span></code></pre>
+<p>Open Files(nautilus) app and enable show hidden files. Then open .bashrc with your preferred text editor. Add this in ~/.bashrc to add ~/bin directory to path.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #C678DD">if</span><span style="color: #ABB2BF"> [ </span><span style="color: #56B6C2">-d</span><span style="color: #ABB2BF"> </span><span style="color: #98C379">"</span><span style="color: #E06C75">$HOME</span><span style="color: #98C379">/bin"</span><span style="color: #ABB2BF"> ] ;</span></span>
+<span class="line"><span style="color: #ABB2BF">  </span><span style="color: #C678DD">then</span><span style="color: #ABB2BF"> PATH=</span><span style="color: #98C379">"</span><span style="color: #E06C75">$HOME</span><span style="color: #98C379">/bin:</span><span style="color: #E06C75">$PATH</span><span style="color: #98C379">"</span></span>
+<span class="line"><span style="color: #C678DD">fi</span></span></code></pre>
+<p>bashrc looks like this:
+<img src="/assets/01-Fedora-Silverblue-Setup/bash.JPG" alt="bashrc"></p>
+<h4 id="installing-vscode">Installing VSCode</h4>
+<p>Download the .deb file from <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+Then install vscode using command from within ubuntu distrbox container:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo apt install &#x3C;path of vscode .deb file></span></span></code></pre>
+<p>We can export the app installed inside ditrobox container to host machine so that the application icon is visible in application menu. Use command <em>distrobox-enter</em> within distrobox container.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox-export --app code</span></span></code></pre>
+<p>Also exporting vscode binary:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox-export --app code --bin /usr/bin/code --export-path ~/bin</span></span></code></pre>
+<h4 id="installing-neovim">Installing Neovim</h4>
+<p>Download the .deb file from <a href="https://github.com/neovim/neovim/releases">https://github.com/neovim/neovim/releases</a> and then install neovim using command from within ubuntu distrobox container</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo apt install &#x3C;path of neovim .deb file></span></span></code></pre>
+<p>Now we will export neovim from distrobox container to host Fedora Silverblue. Run this <em>distrobox-export</em> command from within container:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox-export --app nvim</span></span></code></pre>
+<p>Also exporting nvim binary:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox-export --app nvim --bin /usr/bin/nvim --export-path ~/bin </span></span></code></pre>
+<p>Installing <a href="https://github.com/junegunn/vim-plug">vim plug</a> plugin manager for neovim.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sh -c </span><span style="color: #98C379">'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \</span></span>
+<span class="line"><span style="color: #98C379">        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'</span></span></code></pre>
+<p>Neovim configuration file is ~/.config/init.vim. You can use <a href="https://github.com/Pratik280/dotfiles/blob/main/config/nvim/init.vim">my neovim configuration file</a> for reference. Open neovim and type <em>:PlugInstall</em> to install necessary plugins.</p>
+<p>If you want to setup neovim like an IDE using lua config refer these two videos by <a href="https://youtu.be/w7i4amO_zaE">ThePrimeagen
+</a> and <a href="https://youtu.be/stqUbv-5u2s">TJ DeVries</a>.</p>
+<h3 id="podman-and-docker">Podman and Docker</h3>
+<p>Fedora silverblue comes with podman out of the box. According to <a href="https://docs.podman.io/en/latest/">official documentation</a> “Podman is a daemonless, open source, Linux native tool designed to make it easy to find, run, build, share and deploy applications using Open Containers”. Podman is better alternative to docker. One difference between podman and docker is that podman can be run as root and non-root users. Also podman does not rely on a daemon like docker. <a href="https://www.lambdatest.com/blog/podman-vs-docker/">This article</a> has detailed comparison between podman and docker. Since podman comes preinstalled in our host Fedora Silverblue, <a href="https://github.com/89luca89/distrobox/blob/main/docs/useful_tips.md#using-podman-or-docker-inside-a-distrobox">we can use podman inside our distrobox</a> (ubuntu-22.04) using command</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo ln -s /usr/bin/distrobox-host-exec /usr/local/bin/podman</span></span></code></pre>
+<h2 id="bonus">Bonus</h2>
+<p>Here are some things that I wanted to share but cannot put in any above categories.</p>
+<h3 id="setting-keyboard-shortcuts-to-directly-open-terminal-shell-inside-our-distrobox-container">Setting keyboard shortcuts to directly open terminal shell inside our distrobox container</h3>
+<ol>
+<li>Open gnome-terminal prefrences. There we be default profile with a check mark and with name “unnamed”, click on the small drop-down button and rename it to something like “Silverblue host”. When we open terminal, it opens in this profile.</li>
+</ol>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/terminal.JPG" alt="Terminal Profile"></p>
+<ol start="2">
+<li>Then Create a new profile with name “ubuntu”.
+In the command tab checkmark the two checkboxes. Enter the below command in the “Custom Command field”</li>
+</ol>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #abb2bf">distrobox-enter ubuntu-22.04</span></span></code></pre>
+<p>This will make the shell to open inside the distrobox container.</p>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/terminal-2.JPG" alt="Terminal Profile 2"></p>
+<p><strong>Setting Keyboard shortcuts to open terminal.</strong></p>
+<p>In Settings -> Keyboard -> View and Customize Shortcuts -> Custom Shortcuts.</p>
+<ol>
+<li>Setting keyboard shortcut <em>Super + Shift + Enter</em> to open gnome-terminal with <em>default</em> profile i.e. shell will be inside Silverblue host.</li>
+</ol>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/custompro-1.JPG" alt="Keyboard shortcut host"></p>
+<ol start="2">
+<li>Setting keyboard shortcut <em>Super + Enter</em> to open gnome-terminal with <em>ubuntu</em> profile i.e. the shell will be inside distrobox ubuntu container.</li>
+</ol>
+<p><img src="/assets/01-Fedora-Silverblue-Setup/custompro-2.JPG" alt="Keyboard shortcut host">
+The command <em>gnome-terminal —window-with-profile=ubuntu</em> opens terminal with shell inside distrobox ubuntu container.</p>
+<h3 id="updating">Updating</h3>
+<p>Updating everything(fedora, flatpaks and distrobox containers) using one command:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">rpm-ostree upgrade &#x26;&#x26; flatpak update -y &#x26;&#x26; distrobox upgrade --all</span></span></code></pre>
+<p>You can add alias in bashrc</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> update=</span><span style="color: #98C379">"rpm-ostree upgrade &#x26;&#x26; flatpak update -y &#x26;&#x26; distrobox upgrade --all"</span></span></code></pre>
+<h3 id="housekeeping">Housekeeping</h3>
+<p>Cleaning old images and Flatpak cache:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">rpm-ostree cleanup -b &#x26;&#x26; rpm-ostree cleanup -p &#x26;&#x26; rpm-ostree cleanup -r &#x26;&#x26; sudo rm -rf /var/tmp/flatpak-cache*</span></span></code></pre>
+<p>bash alias:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> clean=</span><span style="color: #98C379">"rpm-ostree cleanup -b &#x26;&#x26; rpm-ostree cleanup -p &#x26;&#x26; rpm-ostree cleanup -r &#x26;&#x26; sudo rm -rf /var/tmp/flatpak-cache*"</span></span></code></pre>
+<h3 id="installing-some-additional-tools">Installing some additional tools</h3>
+<p>Installing some extra programs that I use daily.
+Installing gnome-tweaks, imagemagick and ffmpeg inside distrobox ubuntu container.</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">sudo apt install gnome-tweaks imagemagick ffmpeg</span></span></code></pre>
+<p>Exporting these applications to host system:</p>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #ABB2BF">distrobox-export --app gnome-tweaks &#x26;&#x26;</span></span>
+<span class="line"><span style="color: #ABB2BF">distrobox-export --app convert --bin /usr/bin/convert --export-path ~/bin/ &#x26;&#x26;</span></span>
+<span class="line"><span style="color: #ABB2BF">distrobox-export --app mogrify --bin /usr/bin/mogrify --export-path ~/bin/ &#x26;&#x26;</span></span>
+<span class="line"><span style="color: #ABB2BF">distrobox-export --app ffmpeg --bin /usr/bin/ffmpeg --export-path ~/bin/</span></span></code></pre>
+<h3 id="some-useful-bash-alias">Some useful bash alias</h3>
+<pre is:raw="" class="astro-code" style="background-color: #282c34; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"><code><span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> ll=</span><span style="color: #98C379">'ls -la'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> la=</span><span style="color: #98C379">'ls -a'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> docker=</span><span style="color: #98C379">'podman'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> mkdir=</span><span style="color: #98C379">'mkdir -pv'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> suspend=</span><span style="color: #98C379">'systemctl suspend'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> cp=</span><span style="color: #98C379">"cp -i"</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> mv=</span><span style="color: #98C379">'mv -i'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> rm=</span><span style="color: #98C379">'rm -i'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> grep=</span><span style="color: #98C379">'grep --color=auto'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> egrep=</span><span style="color: #98C379">'egrep --color=auto'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> fgrep=</span><span style="color: #98C379">'fgrep --color=auto'</span></span>
+<span class="line"><span style="color: #56B6C2">alias</span><span style="color: #ABB2BF"> df=</span><span style="color: #98C379">'df -h'</span></span></code></pre>
+<p>For more bash alias you can refer these two videos <a href="https://youtu.be/_NRJU37DQLM">Let’s Share Our Favorite Bash Aliases</a> and <a href="https://youtu.be/4v4Mcncvsac">Shell Aliases Every Linux User Needs</a> from <a href="https://www.youtube.com/@DistroTube">Distrotube</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>That sums up everything. I usually update and do housekeeping of my system once every week. So I run commands <em>update</em> and <em>clean</em> for which I have alias in bashrc. I also did a major upgrade from Fedora 36 to 37 for which I had to reinstall firefox firefox-langpacks, gnome-software and gnome-software-rpm-ostree. Everything else works like a charm no issues yet. I also wanted to take a look at opensuse micro os which is also immutable and comes with distrobox and flathub out of the box. Thankyou for reading this blog I hope this helped you and please feel free to provide feedback and constructive critisism on my socials.</p>
+    </article>
+
+    <ul class="tags-container astro-4Q7HFHDG">
+      <li class="inline-block my-1 underline-offset-4 astro-IH5QHB7X">
+  <a href="/tags/linux-desktop" class="pr-1 text-sm group astro-IH5QHB7X">
+    <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-IH5QHB7X"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-IH5QHB7X"></path>
+    </svg>
+    &nbsp;<span class="astro-IH5QHB7X">linux-desktop</span>
+  </a>
+</li>
+
+
+    </ul>
+  </main><footer class="mt-auto astro-K2H62CTS">
+  <div class="max-w-3xl mx-auto px-0">
+  <hr class="border-skin-line" aria-hidden="true">
+</div>
+  <div class="footer-wrapper astro-K2H62CTS">
+    <div class="social-icons flex astro-ZNDK5VD5">
+  <a type="button" href="https://github.com/Pratik280" tabindex="0" class="group link-button astro-ZNDK5VD5 astro-P4AZ2LLL" title=" Pratik Chandlekar on Github">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon-tabler"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+    ></path>
+  </svg>
+</a>
+
+<a type="button" href="https://github.com/satnaing/astro-paper" tabindex="0" class="group link-button astro-ZNDK5VD5 astro-P4AZ2LLL" title="Pratik Chandlekar on Twitter">
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon-tabler"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+    </svg>
+</a>
+
+
+</div>
+
+
+    <div class="copyright-wrapper astro-K2H62CTS">
+      <span class="astro-K2H62CTS">Copyright &#169; 2023</span>
+      <span class="separator astro-K2H62CTS">&nbsp;|&nbsp;</span>
+      <span class="astro-K2H62CTS">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+
+  </body></html>
+
+

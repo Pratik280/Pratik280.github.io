@@ -4,7 +4,7 @@ datetime: 2023-01-27T17:05:16Z
 title: "Podman pod setup for LEMP stack"
 slug: "podman-pod-setup-for-lemp-stack"
 featured: false
-draft: false
+draft: true
 tags:
   - devops
 ogImage: ""
